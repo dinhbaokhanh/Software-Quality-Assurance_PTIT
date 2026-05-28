@@ -1,5 +1,14 @@
 # Online Learning Platform
 
+Đây là bài tập nhóm.
+
+## Tài liệu nhóm
+
+- [SQA Plan](https://docs.google.com/document/d/14SzqYvOzSAcVaDdzvud-SpP-ae8LHgBoX4YZF86uvWM/edit?usp=sharing)
+- [System Test](https://docs.google.com/spreadsheets/d/1ut3jaWGeHhlKOk9BkE4KvtNY6Wykqodg2k4cBtnXll4/edit?usp=sharing)
+- [SQA Review](https://docs.google.com/spreadsheets/d/1TH6qAIwB-VmL7R0Hp8YHST-PbS9FEJ5G5yOmyaBYnf8/edit?usp=sharing)
+- [Unit Test](https://docs.google.com/spreadsheets/d/1416zVksrB3UFY4w7VMqRh3puT8Gl2xVSBAPaIYH0ATU/edit?usp=sharing)
+
 ## Overview
 
 Phần unit test trong dự án này chủ yếu là các service test chạy trên Spring context thật, dùng `@SpringBootTest` và profile `test`. Các test không chỉ kiểm tra kết quả trả về mà còn kiểm tra dữ liệu trong database sau khi gọi service.
