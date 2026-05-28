@@ -1,5 +1,13 @@
 # Online Learning Platform
 
+## Overview
+
+Phần unit test trong dự án này chủ yếu là các service test chạy trên Spring context thật, dùng `@SpringBootTest` và profile `test`. Các test không chỉ kiểm tra kết quả trả về mà còn kiểm tra dữ liệu trong database sau khi gọi service.
+
+Hiện tại bộ test tập trung vào 4 nhóm chính: `CategoryService`, `EnrollmentService`, `LessonProgressService` và `QuizAttemptService`. Mỗi nhóm đều có các case cho nhánh đúng, nhánh lỗi, và một số case đặc biệt để phát hiện bug hiện có như thiếu validate null, kiểm tra sai quan hệ giữa dữ liệu, hoặc lỗi xử lý JPA lifecycle.
+
+Vì vậy, dù đang được gọi là unit test, thực tế đây là lớp test ở mức service gần với integration test hơn. Mục tiêu của chúng là xác nhận logic nghiệp vụ và trạng thái dữ liệu sau khi chạy từng hàm quan trọng.
+
 ## 1. Chạy server để test trong IntelliJ
 
 Mở thư mục [online-learning](online-learning) bằng IntelliJ IDEA, đảm bảo đang dùng JDK 21, rồi tạo một Run/Debug Configuration kiểu Spring Boot với main class là `com.ptit.onlinelearning.OnlineLearningApplication`.
@@ -10,14 +18,12 @@ Thêm program arguments `--spring.profiles.active=dev`, sau đó bấm Run. Serv
 
 ## 2. Unit test
 
-Unit test trong dự án hiện tại chủ yếu là kiểm tra ngữ cảnh Spring có khởi động được hay không. Có thể chạy nhanh bằng Maven:
+Có thể chạy nhanh toàn bộ test bằng Maven:
 
 ```shell
 mvn test
 ```
 
-Trong IntelliJ, bạn cũng có thể chạy trực tiếp class test `OnlineLearningApplicationTests`. Phần này chỉ nên dùng để kiểm tra logic nhỏ và không phụ thuộc nhiều vào môi trường ngoài.
+Trong IntelliJ, bạn cũng có thể chạy trực tiếp từng class test như `CategoryServiceUnitTest`, `EnrollmentServiceUnitTest`, `LessonProgressServiceUnitTest`, `QuizAttemptServiceUnitTest` hoặc `OnlineLearningApplicationTests`.
 
-## 3. Bỏ phần thừa
-
-Các phần như tech stack, hướng dẫn clone, CI/integration test, troubleshooting, project structure và contributing đã được lược bỏ khỏi README vì không phục vụ mục tiêu unit test và khởi động server trong IntelliJ.
+Các test này dùng dữ liệu thật trong database test, nên phù hợp nhất để kiểm tra logic nghiệp vụ và các nhánh xử lý quan trọng của service.
