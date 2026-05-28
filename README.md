@@ -1,4 +1,13 @@
-# Online Learning Platform
+# SQA Assignments 
+
+## Thông tin chung
+
+- **Giảng viên hướng dẫn:** Đỗ Thị Bích Ngọc
+- **Thành viên nhóm:**
+  - Đinh Bảo Khánh (B22DCVT281)
+  - Lê Tiến Đạt
+  - Trương Gia Huy
+  - Phạm Thành Hùng
 
 ## Tài liệu
 
@@ -19,7 +28,7 @@ Vì vậy, dù đang được gọi là unit test, thực tế đây là lớp t
 
 Mở thư mục [online-learning](online-learning) bằng IntelliJ IDEA, đảm bảo đang dùng JDK 21, rồi tạo một Run/Debug Configuration kiểu Spring Boot với main class là `com.ptit.onlinelearning.OnlineLearningApplication`.
 
-Trong phần Environment variables, cấu hình tối thiểu các biến mà `application-dev.yml` đang dùng, đặc biệt là `DB_NAME`, `DB_PASSWORD`, `AWS_REGION_NAME`, `AWS_S3_BUCKET`, `AWS_ACCESS_KEY`, `AWS_SECRET_KEY`, `CLOUDFRONT_HOST`, `VNPAY_URL`, `VNPAY_RETURN_URL`, `VNPAY_RETURN_URL_PRE_ORDER`, `VNPAY_TMN_CODE`, `VNPAY_HASH_SECRET`, `VNPAY_API_URL`, `SENGRID_API_KEY`. Nếu cần test đầy đủ luồng backend, hãy chạy sẵn PostgreSQL, Redis và RabbitMQ theo các giá trị trong file cấu hình.
+Trong phần Environment variables, cấu hình tối thiểu các biến mà `application-dev.yml` đang dùng, đặc biệt là `DB_NAME`, `DB_PASSWORD`, `AWS_REGION_NAME`, `AWS_S3_BUCKET`, `AWS_ACCESS_KEY`, `AWS_SECRET_KEY`, `CLOUDFRONT_HOST`, `VNPAY_URL`, `VNPAY_RETURN_URL`, `VNPAY_RETURN_URL_PRE_ORDER`, `VNPAY_TMN_CODE`, `VNPAY_HASH_SECRET`, `VNPAY_API_URL`, `SENGRID_API_KEY`. Nếu cần test đầy đủ luồng backend, tự thiết lập env và chạy sẵn PostgreSQL, Redis và RabbitMQ theo các giá trị trong file cấu hình. Nếu cần xem Unit Test, đối chiếu với link unit test ở trên.
 
 Thêm program arguments `--spring.profiles.active=dev`, sau đó bấm Run. Server sẽ khởi động trên port `8080` theo cấu hình hiện tại.
 
