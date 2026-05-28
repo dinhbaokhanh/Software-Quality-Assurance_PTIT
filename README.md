@@ -1,8 +1,6 @@
 # Online Learning Platform
 
-Đây là bài tập nhóm.
-
-## Tài liệu nhóm
+## Tài liệu
 
 - [SQA Plan](https://docs.google.com/document/d/14SzqYvOzSAcVaDdzvud-SpP-ae8LHgBoX4YZF86uvWM/edit?usp=sharing)
 - [System Test](https://docs.google.com/spreadsheets/d/1ut3jaWGeHhlKOk9BkE4KvtNY6Wykqodg2k4cBtnXll4/edit?usp=sharing)
