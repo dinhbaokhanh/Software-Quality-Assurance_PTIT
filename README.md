@@ -1,5 +1,14 @@
 # SQA Assignments 
 
+## Thông tin chung
+
+- **Giảng viên hướng dẫn:** Đỗ Thị Bích Ngọc
+- **Thành viên nhóm:**
+  - Đinh Bảo Khánh (B22DCVT281)
+  - Lê Tiến Đạt
+  - Trương Gia Huy
+  - Phạm Thành Hùng
+
 ## Tài liệu
 
 - [SQA Plan](https://docs.google.com/document/d/14SzqYvOzSAcVaDdzvud-SpP-ae8LHgBoX4YZF86uvWM/edit?usp=sharing)
